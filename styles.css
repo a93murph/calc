@@ -8,12 +8,9 @@ body {
 
 .calculator {
   background-color: slategrey;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 7% 30%;
-  height: 35em;
-  width: 20em;
+  display: block;
+  margin: 10% auto;
+  width: 400px;
   border: 1px solid slategrey;
 }
 .screen {
@@ -21,19 +18,36 @@ body {
   display: block;
   text-align: end;
   font-size: 40px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding: 20px 5px;
 }
 .number-pad {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 .keys {
   height: 100px;
-  width: 75px;
   font-size: 40px;
+  width: 25%;
 }
 .key-zero {
-  width: 100%;
+  font-size: 40px;
+  height: 100px;
+  flex-grow: 4;
+}
+.last-column {
+  font-size: 40px;
+  width: 25%;
+  background-color:rgb(245, 119, 73);
+  color: whitesmoke;
+}
+.key-clear {
+  height: 100px;
+  flex-grow: 6;
+  font-size: 40px;
 }
