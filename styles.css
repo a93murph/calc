@@ -17,8 +17,9 @@ body {
   font-family: monospace;
   display: block;
   text-align: end;
+  height: 35px;
   font-size: 40px;
-  padding: 20px 5px;
+  padding: 5px 10px;
   color: whitesmoke;
 }
 .number-pad {
