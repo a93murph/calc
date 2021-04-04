@@ -3,9 +3,10 @@
 //   alert(`You've clicked on button ${event.target.innerText}`);
 // });
 
-const input = document.querySelector(".calculator");
+const calc = document.querySelector(".calculator");
 const display = document.querySelector(".screen");
+const clear = document.querySelector(".key-clear");
 
-input.addEventListener("click", function () {
-  display.innerText = event.target.innerText;
+calc.addEventListener("click", function () {
+  display.innerText += event.target.innerText;
 });
