@@ -8,12 +8,12 @@ const display = document.querySelector(".screen");
 // const clear = document.querySelector(".key-clear");
 const clear = ["C"];
 const divide = ["÷"];
+const add = ["+"];
 
 calc.addEventListener("click", function () {
   if (numbers.indexOf(event.target.innerText) >= 0) {
-    display.innerText += event.target.innerText;
-    parseInt(display.innerText)
-    console.log(typeof parseInt(display.innerText));
+    let result = parseInt((display.innerText += event.target.innerText));
+    console.log(result);
   }
 });
 
@@ -24,7 +24,7 @@ calc.addEventListener("click", function () {
 });
 
 // calc.addEventListener("click", function () {
-//   if (divide.indexOf(event.target.innerText) >= 0) {
-//     return (display.innerHTML /
+//   if (add.indexOf(event.target.innerText) >= 0) {
+//     return (display + event.target.innerText)
 //   }
 // });
