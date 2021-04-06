@@ -7,11 +7,13 @@ const calc = document.querySelector(".number-pad");
 const display = document.querySelector(".screen");
 // const clear = document.querySelector(".key-clear");
 const clear = ["C"];
-const lastColumn = document.querySelector(".last-column");
+const divide = ["÷"];
 
 calc.addEventListener("click", function () {
   if (numbers.indexOf(event.target.innerText) >= 0) {
-    display.innerText += event.target.innerText;
+    let num = parseInt(event.target.innerText)
+    display.innerHTML += num;
+    console.log(typeof num);
   }
 });
 
@@ -20,3 +22,9 @@ calc.addEventListener("click", function () {
     display.innerText = "";
   }
 });
+
+// calc.addEventListener("click", function () {
+//   if (divide.indexOf(event.target.innerText) >= 0) {
+//     return (display /
+//   }
+// });
