@@ -11,9 +11,9 @@ const divide = ["÷"];
 
 calc.addEventListener("click", function () {
   if (numbers.indexOf(event.target.innerText) >= 0) {
-    let num = parseInt(event.target.innerText)
-    display.innerHTML += num;
-    console.log(typeof num);
+    display.innerText += event.target.innerText;
+    parseInt(display.innerText)
+    console.log(typeof parseInt(display.innerText));
   }
 });
 
@@ -25,6 +25,6 @@ calc.addEventListener("click", function () {
 
 // calc.addEventListener("click", function () {
 //   if (divide.indexOf(event.target.innerText) >= 0) {
-//     return (display /
+//     return (display.innerHTML /
 //   }
 // });
