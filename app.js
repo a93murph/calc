@@ -7,14 +7,7 @@ const symbols = ["/", "+", "-", "*"];
 const equals = ["="];
 let equation = "";
 
-// calc.addEventListener("click", function () {
-//   if (numbers.indexOf(event.target.innerText) >= 0) {
-//     let result = parseInt((display.innerText += event.target.innerText));
-//     console.log(result);
-//   }
-// });
-
-calc.addEventListener("click", function () {
+calc.addEventListener("click", function (event) {
   if (numbers.indexOf(event.target.innerText) >= 0) {
     display.innerText += event.target.innerText;
     equation += event.target.innerText;
@@ -35,16 +28,3 @@ calc.addEventListener("click", function () {
     console.log(result);
   }
 });
-
-// for (let i = 0; i < display.length; i++) {
-//   let result = [];
-//   while (numbers.indexOf(display[i]) >= 0) {
-//     result += parseInt((display.innerText += event.target.innerText));
-//   }
-// }
-
-// calc.addEventListener("click", function () {
-//   if (symbols.indexOf(event.target.innerText) >= 0) {
-//     equation += event.target.innerText;
-//   }
-// });
